@@ -467,6 +467,7 @@ function M.setup()
 		end,
 	})
 	vim.api.nvim_create_autocmd({ "CursorMoved", "CursorMovedI" }, {
+		pattern = "*.udi",
 		callback = function()
 			highlight_todo_items()
 		end,
